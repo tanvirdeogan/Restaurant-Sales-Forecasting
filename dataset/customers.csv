@@ -1,0 +1,501 @@
+customer_id,customer_name,gender,city,membership
+1,Nidra Chaudhary,Female,Delhi,Silver
+2,Kashvi Chana,Male,Ludhiana,Regular
+3,Krish Nori,Female,Jaipur,Gold
+4,Alexander Seshadri,Female,Pune,Regular
+5,Azad Sathe,Female,Ludhiana,Gold
+6,Owen Pant,Female,Amritsar ,Regular
+7,Oscar Soman,Male,Amritsar ,Gold
+8,Netra Rajagopalan,Female,Pune,Silver
+9,Yasti Grover,Female,Amritsar ,Premium
+10,Ekani Kuruvilla,Female,Delhi,Regular
+11,Nakul Mane,Female,Amritsar ,Gold
+12,Indrajit Bajwa,Male,Chandigarh,Regular
+13,Charles Tank,Female,Jaipur,Silver
+14,Nathan Chaudhary,Male,Mumbai,Premium
+15,Upadhriti Naidu,Female,Delhi,Regular
+16,Anika Bath,Male,Amritsar ,Silver
+17,Aadhya Khatri,Male,Mumbai,Regular
+18,Oscar Mander,Female,Mumbai,Silver
+19,Chavvi Varty,Female,Amritsar ,Premium
+20,Faraj Gaba,Male,Chandigarh,Premium
+21,Nihal Bhakta,Female,Delhi,Gold
+22,Fariq Karnik,Male,Mumbai,Regular
+23,Lipika Thakur,Female,Mumbai,Gold
+24,Amol Biswas,Female,Banglore,Gold
+25,Radhika Narula,Male,Delhi,Premium
+26,Nisha Mander,Female,Jaipur,Gold
+27,Anirudh Atwal,Female,Chandigarh,Silver
+28,Kai Bhakta,Female,Banglore,Silver
+29,Yachana Tak,Male,Pune,Premium
+30,Pushti Kaur,Male,Delhi,Gold
+31,Manan Chahal,Female,Jaipur,Premium
+32,Vasudha Kothari,Male,Jaipur,Premium
+33,Timothy Narula,Male,Mumbai,Silver
+34,Warhi Kadakia,Male,Ludhiana,Gold
+35,Charvi Shanker,Male,Chandigarh,Regular
+36,Ronith Mangat,Male,Amritsar ,Regular
+37,Gautami Varghese,Female,Banglore,Regular
+38,Simon Narula,Male,Banglore,Regular
+39,Aishani Barad,Male,Chandigarh,Gold
+40,Yagnesh Golla,Male,Chandigarh,Gold
+41,Rehaan Wali,Female,Pune,Premium
+42,Divya Mammen,Female,Chandigarh,Premium
+43,Balendra Baral,Male,Jaipur,Regular
+44,Chakradhar Boase,Male,Ludhiana,Silver
+45,Janya Khosla,Female,Delhi,Premium
+46,Tara Keer,Male,Chandigarh,Gold
+47,Vasana Goda,Female,Amritsar ,Premium
+48,Manya Varughese,Female,Banglore,Gold
+49,Nimrat Nazareth,Male,Mumbai,Silver
+50,Elijah Wali,Female,Pune,Silver
+51,Dhriti Keer,Female,Banglore,Premium
+52,Nathan Sankaran,Male,Ludhiana,Silver
+53,Azad Hora,Male,Amritsar ,Regular
+54,Ekavir Bhatti,Male,Pune,Silver
+55,Lajita Halder,Female,Banglore,Silver
+56,Agastya Dar,Female,Banglore,Gold
+57,Anita Hora,Male,Ludhiana,Silver
+58,Kiaan Bandi,Male,Banglore,Gold
+59,Lohit Boase,Female,Mumbai,Regular
+60,Harsh Buch,Male,Jaipur,Regular
+61,Dhriti Bobal,Male,Jaipur,Premium
+62,Vincent Sengupta,Male,Amritsar ,Silver
+63,Deepa Vasa,Female,Mumbai,Regular
+64,Kashish Seth,Male,Jaipur,Premium
+65,Faqid Sangha,Female,Delhi,Silver
+66,Zayan Aggarwal,Male,Amritsar ,Gold
+67,Urmi Sridhar,Female,Pune,Premium
+68,Vasudha Taneja,Male,Chandigarh,Premium
+69,Zashil Mishra,Female,Chandigarh,Premium
+70,Keya Swaminathan,Male,Delhi,Silver
+71,Daksha Choudhury,Female,Pune,Regular
+72,Qabil Bhandari,Female,Banglore,Regular
+73,Dayamai Mukherjee,Male,Pune,Silver
+74,Bhanumati Bains,Male,Delhi,Gold
+75,Ria Bansal,Female,Mumbai,Regular
+76,Krish Bhatia,Male,Mumbai,Regular
+77,Chanakya Kant,Male,Delhi,Silver
+78,Yamini Singh,Female,Delhi,Silver
+79,Udyati Gokhale,Male,Banglore,Premium
+80,Aahana Mody,Male,Banglore,Premium
+81,Lipika Majumdar,Female,Delhi,Gold
+82,Chanchal Bahl,Male,Banglore,Silver
+83,Forum Pant,Female,Amritsar ,Premium
+84,Faqid Batta,Male,Jaipur,Premium
+85,Yashawini Madan,Male,Banglore,Silver
+86,Chakrika Rajagopalan,Female,Pune,Silver
+87,Raksha Bedi,Female,Delhi,Premium
+88,Shivansh Memon,Male,Ludhiana,Gold
+89,Ronith Walia,Male,Mumbai,Silver
+90,Pushti Deol,Male,Pune,Gold
+91,Daksh Patil,Female,Ludhiana,Gold
+92,Jalsa Kalla,Female,Pune,Gold
+93,Tanvi Gokhale,Male,Ludhiana,Regular
+94,Bhanumati Ray,Female,Pune,Silver
+95,Farhan Chakrabarti,Male,Pune,Silver
+96,Reva Narain,Male,Banglore,Silver
+97,Om Rastogi,Female,Ludhiana,Regular
+98,Jagvi Chokshi,Female,Amritsar ,Premium
+99,Ayaan Mahajan,Female,Jaipur,Regular
+100,Sanaya Chawla,Female,Delhi,Gold
+101,Darpan Gulati,Female,Pune,Regular
+102,Devansh Venkatesh,Female,Banglore,Premium
+103,Meera Hans,Female,Amritsar ,Regular
+104,Madhav Raval,Male,Jaipur,Premium
+105,Sudiksha Gupta,Female,Mumbai,Silver
+106,Ekapad Shenoy,Female,Delhi,Premium
+107,Siya Acharya,Male,Jaipur,Premium
+108,Dayamai Sanghvi,Male,Mumbai,Gold
+109,Sai Master,Female,Pune,Gold
+110,Xiti Chakrabarti,Female,Mumbai,Regular
+111,Balhaar Venkatesh,Male,Delhi,Premium
+112,Dhruv Kaur,Female,Jaipur,Silver
+113,Xiti Saxena,Female,Delhi,Silver
+114,Orinder Majumdar,Male,Mumbai,Regular
+115,Mitesh Magar,Female,Chandigarh,Silver
+116,Harsh Sethi,Male,Mumbai,Gold
+117,Ekapad Raja,Female,Amritsar ,Premium
+118,Isaiah Bawa,Female,Mumbai,Regular
+119,Veda Palla,Male,Jaipur,Silver
+120,Chatura Memon,Female,Delhi,Silver
+121,Jatin Kota,Male,Jaipur,Silver
+122,Jatin Hans,Female,Pune,Regular
+123,Charan Nath,Female,Jaipur,Regular
+124,Rachit Sandhu,Female,Jaipur,Regular
+125,Chakradhar Soni,Male,Amritsar ,Gold
+126,Yatan Saraf,Female,Ludhiana,Regular
+127,Deepa Chada,Female,Jaipur,Regular
+128,Nirja Shan,Female,Pune,Premium
+129,Ethan Dugar,Male,Banglore,Gold
+130,Daksh Mukhopadhyay,Male,Chandigarh,Premium
+131,Kala Bawa,Female,Banglore,Gold
+132,Yug Lala,Female,Amritsar ,Silver
+133,Deepa Chaudhry,Female,Banglore,Gold
+134,Akshay Varkey,Male,Amritsar ,Silver
+135,Frederick Rastogi,Female,Amritsar ,Silver
+136,Yashvi Bhattacharyya,Male,Pune,Gold
+137,Tejas Borah,Female,Pune,Silver
+138,Ekalinga Choudhury,Female,Chandigarh,Regular
+139,Jonathan Sandal,Male,Chandigarh,Silver
+140,Harshil Hayer,Female,Chandigarh,Regular
+141,Bhavika Modi,Female,Mumbai,Gold
+142,Wriddhish Pandey,Male,Ludhiana,Premium
+143,Odika Chandra,Female,Chandigarh,Premium
+144,Jeevika Bir,Male,Delhi,Silver
+145,Laksh Mohan,Male,Delhi,Regular
+146,Maanav Soni,Male,Ludhiana,Regular
+147,Tripti Sampath,Male,Mumbai,Premium
+148,Urvi Thakur,Male,Amritsar ,Silver
+149,Caleb Bhavsar,Female,Banglore,Silver
+150,Vasudha Ahluwalia,Male,Mumbai,Regular
+151,Brijesh Sarraf,Male,Jaipur,Gold
+152,Ishwar Thakkar,Female,Mumbai,Silver
+153,Bahadurjit Borde,Male,Banglore,Gold
+154,Bhavika Sarna,Male,Banglore,Premium
+155,Anmol Rajagopal,Female,Ludhiana,Gold
+156,Zayyan Panchal,Male,Mumbai,Gold
+157,Jeet Sandhu,Female,Jaipur,Silver
+158,Ekansh Shere,Female,Banglore,Silver
+159,Yashvi Rao,Male,Ludhiana,Regular
+160,Rachana Arora,Female,Jaipur,Silver
+161,Watika Tak,Female,Ludhiana,Premium
+162,Devika Varma,Male,Ludhiana,Gold
+163,Chanchal Nagy,Female,Jaipur,Premium
+164,Qarin Goel,Male,Pune,Silver
+165,Omkaar Padmanabhan,Male,Ludhiana,Silver
+166,Aahana Bhalla,Male,Chandigarh,Premium
+167,Joshua Khalsa,Male,Ludhiana,Silver
+168,Benjamin Johal,Male,Banglore,Premium
+169,Dayamai Loyal,Female,Ludhiana,Silver
+170,Jagdish Barman,Female,Delhi,Regular
+171,Oviya Nair,Male,Ludhiana,Silver
+172,Kevin Gokhale,Male,Chandigarh,Premium
+173,Darsh Kari,Male,Pune,Premium
+174,Anjali Kibe,Male,Jaipur,Regular
+175,Madhav Sandhu,Male,Mumbai,Premium
+176,Arjun Gala,Female,Mumbai,Silver
+177,Samuel Vala,Female,Amritsar ,Silver
+178,Aradhana Bawa,Female,Amritsar ,Gold
+179,Ishwar Padmanabhan,Male,Amritsar ,Premium
+180,Girindra Bhakta,Male,Mumbai,Gold
+181,Qadim Chauhan,Female,Delhi,Gold
+182,Nirja Savant,Female,Delhi,Regular
+183,Anay Dutta,Male,Delhi,Silver
+184,Nathan Pathak,Male,Banglore,Silver
+185,Rehaan Konda,Male,Ludhiana,Gold
+186,Vinaya Gole,Male,Mumbai,Premium
+187,Warhi Krish,Male,Chandigarh,Gold
+188,Reva Wali,Female,Delhi,Gold
+189,Amrita Munshi,Female,Ludhiana,Silver
+190,Inaya Krishnan,Male,Mumbai,Gold
+191,Anamika Bains,Female,Mumbai,Regular
+192,Reva Dada,Female,Banglore,Silver
+193,Tanish Din,Female,Chandigarh,Regular
+194,Hardik Chopra,Male,Pune,Silver
+195,Siddharth Dash,Male,Delhi,Premium
+196,Adweta Varty,Female,Pune,Premium
+197,Chakrika Kade,Male,Chandigarh,Regular
+198,Tarak Lalla,Male,Ludhiana,Premium
+199,Vincent Deep,Female,Banglore,Silver
+200,Simon Pillay,Female,Mumbai,Premium
+201,Jhalak Mann,Male,Chandigarh,Gold
+202,Tanvi Chawla,Female,Jaipur,Gold
+203,Xalak Yogi,Female,Amritsar ,Regular
+204,Aarav Mutti,Male,Pune,Premium
+205,Widisha Chakraborty,Male,Chandigarh,Regular
+206,Qasim Warrior,Male,Banglore,Gold
+207,Umang Raman,Male,Delhi,Silver
+208,Riya Chahal,Male,Ludhiana,Premium
+209,Bakhshi Balan,Female,Delhi,Gold
+210,Faqid Sabharwal,Female,Mumbai,Premium
+211,Omisha Walia,Male,Ludhiana,Premium
+212,Maanas Naik,Male,Ludhiana,Gold
+213,Bahadurjit Deo,Female,Jaipur,Premium
+214,Eesha Sarin,Female,Delhi,Gold
+215,Nidra Saha,Female,Mumbai,Silver
+216,Charvi Mangat,Female,Mumbai,Regular
+217,Meghana Patla,Male,Jaipur,Premium
+218,Zashil Madan,Male,Mumbai,Gold
+219,Rachana Kapoor,Female,Delhi,Regular
+220,Gautami Sami,Male,Mumbai,Gold
+221,Robert Walla,Female,Delhi,Silver
+222,Girindra Rai,Male,Pune,Regular
+223,Dhriti Aurora,Male,Ludhiana,Regular
+224,Lucky Venkataraman,Female,Pune,Premium
+225,Amara Muni,Male,Chandigarh,Silver
+226,Zayyan Raj,Male,Pune,Gold
+227,Chanakya Rajan,Female,Chandigarh,Gold
+228,Dhruv Mukhopadhyay,Male,Banglore,Premium
+229,Anika Brar,Male,Banglore,Silver
+230,Siya Srinivasan,Male,Pune,Gold
+231,Elijah Master,Female,Ludhiana,Regular
+232,Urishilla Saha,Female,Jaipur,Silver
+233,Pallavi Bhat,Female,Banglore,Silver
+234,Manbir Chakraborty,Male,Ludhiana,Silver
+235,Hiral Ahluwalia,Male,Mumbai,Regular
+236,Chakradhar Trivedi,Female,Banglore,Regular
+237,Utkarsh Sachdeva,Female,Chandigarh,Silver
+238,Gavin Nagi,Male,Jaipur,Gold
+239,Warda Sen,Female,Banglore,Gold
+240,Lavanya Goda,Male,Amritsar ,Regular
+241,Amrita Chand,Female,Pune,Premium
+242,Anita Sethi,Female,Ludhiana,Silver
+243,Yasti Cheema,Female,Delhi,Premium
+244,Neha Lanka,Male,Banglore,Regular
+245,Meghana Sengupta,Female,Delhi,Silver
+246,Anmol Vig,Male,Amritsar ,Regular
+247,Rajata Pradhan,Female,Amritsar ,Regular
+248,Aarna D’Alia,Female,Pune,Gold
+249,Aahana Bhatnagar,Female,Delhi,Silver
+250,Tripti Gade,Female,Jaipur,Gold
+251,Advik Basak,Male,Delhi,Silver
+252,Arjun Rajagopal,Male,Mumbai,Gold
+253,Janya Salvi,Male,Mumbai,Silver
+254,Onkar Sagar,Male,Amritsar ,Silver
+255,Teerth Zacharia,Male,Jaipur,Premium
+256,Udyati Sha,Male,Amritsar ,Gold
+257,Ronith Mani,Male,Ludhiana,Regular
+258,Jagdish Narasimhan,Male,Mumbai,Regular
+259,Nimrat Kalita,Female,Mumbai,Regular
+260,Yagnesh Som,Female,Ludhiana,Silver
+261,Vihaan Rajan,Male,Delhi,Regular
+262,Dayamai Sarna,Male,Amritsar ,Gold
+263,Devansh Pau,Male,Amritsar ,Regular
+264,Falak Tandon,Female,Mumbai,Regular
+265,Mugdha Kota,Male,Delhi,Premium
+266,Nimrat Mall,Female,Delhi,Regular
+267,Eiravati Bhakta,Female,Delhi,Regular
+268,Irya Thakur,Male,Delhi,Gold
+269,Ikbal Taneja,Male,Chandigarh,Gold
+270,Ikshita Rao,Male,Jaipur,Silver
+271,Vedhika Tank,Female,Pune,Premium
+272,Abhiram Dugar,Female,Pune,Premium
+273,Yatan Chandra,Female,Mumbai,Regular
+274,Shivansh Khalsa,Female,Pune,Premium
+275,Hemani Sawhney,Male,Pune,Regular
+276,Urishilla Deo,Female,Chandigarh,Gold
+277,Vanya Muni,Female,Chandigarh,Premium
+278,Laban Natt,Female,Mumbai,Silver
+279,Aachal Srinivas,Male,Pune,Silver
+280,Chatresh Seth,Female,Chandigarh,Silver
+281,Yashvi Prakash,Male,Amritsar ,Silver
+282,Xalak Ramanathan,Female,Chandigarh,Regular
+283,Akshay Dixit,Male,Chandigarh,Silver
+284,Ekta Cherian,Male,Ludhiana,Premium
+285,Baljiwan Dar,Male,Ludhiana,Silver
+286,Nidhi Jani,Male,Mumbai,Regular
+287,Chameli De,Female,Ludhiana,Gold
+288,Aradhana Lad,Male,Jaipur,Silver
+289,Tejas Kade,Male,Amritsar ,Gold
+290,Tanish Sha,Female,Jaipur,Regular
+291,Utkarsh Dey,Female,Mumbai,Silver
+292,Harini Venkatesh,Male,Mumbai,Regular
+293,Laban Deol,Male,Pune,Gold
+294,Unnati Ray,Female,Amritsar ,Regular
+295,Faraj Badami,Female,Ludhiana,Silver
+296,Tristan Mane,Female,Delhi,Regular
+297,Zaid Parmer,Female,Banglore,Regular
+298,Upasna Bath,Female,Amritsar ,Premium
+299,Rajeshri Sethi,Female,Amritsar ,Silver
+300,Brijesh Magar,Female,Delhi,Premium
+301,Advika Aggarwal,Male,Pune,Regular
+302,Wyatt Kaur,Female,Banglore,Gold
+303,Balvan Anne,Male,Mumbai,Premium
+304,Falak Chauhan,Male,Delhi,Premium
+305,Upasna Handa,Male,Pune,Premium
+306,Meghana Chad,Female,Amritsar ,Regular
+307,Dipta Khalsa,Female,Banglore,Premium
+308,Darsh Ahluwalia,Male,Chandigarh,Premium
+309,Forum Palla,Female,Banglore,Regular
+310,Daksha Sankaran,Male,Mumbai,Premium
+311,Parth Bala,Male,Banglore,Gold
+312,Mohammed Tata,Male,Delhi,Regular
+313,Charvi Srinivas,Female,Mumbai,Gold
+314,Tanish Thakkar,Female,Amritsar ,Silver
+315,Udant Bhandari,Male,Delhi,Regular
+316,Ati Bhatti,Male,Ludhiana,Premium
+317,Devansh Dhawan,Female,Amritsar ,Premium
+318,Zinal Kohli,Female,Jaipur,Gold
+319,David Kumer,Male,Chandigarh,Premium
+320,Christopher Shankar,Female,Pune,Premium
+321,Wriddhish Krishnan,Female,Banglore,Gold
+322,Ishani Choudhury,Male,Pune,Silver
+323,Upadhriti Radhakrishnan,Male,Mumbai,Premium
+324,Urvi Dani,Male,Chandigarh,Premium
+325,Chaitaly Deo,Male,Mumbai,Regular
+326,Suhani Ganguly,Male,Ludhiana,Silver
+327,Imaran Patil,Male,Chandigarh,Silver
+328,Hiral Anand,Female,Delhi,Silver
+329,Irya Goswami,Female,Jaipur,Premium
+330,Chameli Sanghvi,Female,Mumbai,Gold
+331,Ojas Pall,Male,Mumbai,Premium
+332,Waida Dash,Male,Ludhiana,Regular
+333,Zansi Nagarajan,Female,Ludhiana,Regular
+334,Lavanya Sarraf,Female,Delhi,Gold
+335,Pooja Sekhon,Male,Banglore,Premium
+336,Radhika Bedi,Female,Delhi,Silver
+337,Ishanvi Thaker,Male,Mumbai,Gold
+338,Turvi Peri,Female,Jaipur,Regular
+339,Advik Dey,Female,Delhi,Gold
+340,Faras Bala,Female,Delhi,Premium
+341,Pratyush Goda,Female,Jaipur,Silver
+342,Ridhi Prakash,Female,Ludhiana,Silver
+343,Ishita Thakkar,Female,Amritsar ,Regular
+344,Deepa Chawla,Male,Mumbai,Silver
+345,Saumya Dutt,Female,Delhi,Silver
+346,Lakshit Nagy,Male,Jaipur,Silver
+347,Balvan Kale,Female,Amritsar ,Gold
+348,Frado Sethi,Female,Banglore,Regular
+349,Praneel Dara,Female,Amritsar ,Premium
+350,Sara Loyal,Male,Mumbai,Silver
+351,Omkaar Atwal,Female,Ludhiana,Silver
+352,Mekhala Mishra,Female,Ludhiana,Regular
+353,Patrick Sethi,Female,Delhi,Silver
+354,Qushi Garg,Female,Pune,Silver
+355,Ekiya Bajaj,Male,Delhi,Premium
+356,Abhiram Bali,Female,Banglore,Gold
+357,Nidra Parikh,Male,Mumbai,Premium
+358,Jhalak Luthra,Female,Pune,Premium
+359,Yauvani Chaudhry,Male,Pune,Gold
+360,Nimrat Prashad,Female,Pune,Gold
+361,Kashvi Kunda,Male,Jaipur,Regular
+362,Vivaan Master,Female,Delhi,Premium
+363,Oeshi Dyal,Male,Jaipur,Regular
+364,Nidra Chanda,Male,Ludhiana,Regular
+365,Yamini Patla,Male,Jaipur,Silver
+366,Henry Ranganathan,Male,Pune,Regular
+367,Saumya Chopra,Female,Mumbai,Regular
+368,Aradhana Madan,Female,Mumbai,Silver
+369,Pranav Pingle,Male,Banglore,Silver
+370,Nitesh Natarajan,Male,Mumbai,Gold
+371,Varenya Bajaj,Female,Amritsar ,Silver
+372,Jackson Pall,Female,Ludhiana,Regular
+373,Gautami Rama,Female,Banglore,Gold
+374,Ayaan Bala,Male,Pune,Silver
+375,Henry Bedi,Male,Banglore,Silver
+376,Michael Ranganathan,Male,Jaipur,Silver
+377,Yauvani Sahni,Male,Delhi,Regular
+378,Mitesh Shukla,Female,Ludhiana,Regular
+379,Reyansh Srinivasan,Male,Mumbai,Gold
+380,Ranveer Deep,Male,Jaipur,Gold
+381,Jagvi Balan,Female,Banglore,Regular
+382,Shaurya Upadhyay,Male,Delhi,Gold
+383,Darsh Muni,Male,Mumbai,Regular
+384,Anusha Contractor,Female,Delhi,Regular
+385,Ryan Bakshi,Male,Jaipur,Regular
+386,Wakeeta Krish,Female,Chandigarh,Gold
+387,Laban Oza,Male,Ludhiana,Regular
+388,Nathan Nayar,Female,Ludhiana,Gold
+389,Pushti Pant,Female,Delhi,Regular
+390,Zansi Luthra,Male,Ludhiana,Gold
+391,Wyatt Jha,Male,Chandigarh,Gold
+392,Harinakshi Prabhakar,Male,Amritsar ,Premium
+393,Nilima Kaur,Female,Chandigarh,Premium
+394,Warhi Kaul,Female,Amritsar ,Silver
+395,Matthew Thaker,Male,Ludhiana,Regular
+396,Yashoda Yogi,Male,Jaipur,Premium
+397,Chakradhar Tank,Male,Ludhiana,Gold
+398,Triya Karnik,Female,Jaipur,Premium
+399,Sarthak Deshpande,Male,Delhi,Regular
+400,Urishilla Desai,Male,Ludhiana,Regular
+401,Ethan Rao,Male,Amritsar ,Premium
+402,Garima Prakash,Female,Mumbai,Silver
+403,Manan Ramanathan,Female,Ludhiana,Silver
+404,Chatura Ganesan,Female,Amritsar ,Gold
+405,Chaman Sheth,Female,Pune,Silver
+406,Widisha Gokhale,Female,Mumbai,Gold
+407,Dhruv Barad,Female,Banglore,Regular
+408,Pahal Ratta,Female,Ludhiana,Regular
+409,Jeet Raman,Female,Mumbai,Premium
+410,Gayathri Lall,Female,Jaipur,Premium
+411,Jagdish Gera,Male,Jaipur,Premium
+412,Waida Chanda,Male,Mumbai,Silver
+413,Wridesh Mutti,Male,Chandigarh,Gold
+414,Netra Barman,Female,Chandigarh,Premium
+415,Jalsa Mannan,Male,Jaipur,Gold
+416,Dev Modi,Male,Ludhiana,Gold
+417,Anay Buch,Female,Ludhiana,Premium
+418,Viraj Rajan,Male,Ludhiana,Premium
+419,Varenya D’Alia,Male,Pune,Regular
+420,Abdul Baria,Male,Pune,Premium
+421,Jai Kara,Male,Delhi,Silver
+422,Tanay Savant,Female,Pune,Regular
+423,Deepa Rajan,Male,Delhi,Regular
+424,Zayan Mangal,Female,Delhi,Silver
+425,Gabriel Sahni,Female,Jaipur,Regular
+426,Chanchal Bumb,Male,Ludhiana,Premium
+427,Yahvi Tata,Male,Jaipur,Regular
+428,Hredhaan Sem,Male,Amritsar ,Silver
+429,Ganga Bhalla,Male,Banglore,Regular
+430,Jeevika Sundaram,Male,Mumbai,Regular
+431,Madhavi Ben,Female,Pune,Silver
+432,Pallavi Mital,Male,Amritsar ,Gold
+433,Darsh Andra,Female,Chandigarh,Premium
+434,Pallavi Ganguly,Female,Ludhiana,Regular
+435,Vedika Zacharia,Male,Mumbai,Regular
+436,Vanya Madan,Male,Banglore,Premium
+437,Samar Kapadia,Male,Pune,Silver
+438,Neelima Ratti,Male,Ludhiana,Premium
+439,Ekapad Sidhu,Male,Delhi,Premium
+440,Vrishti Mandal,Male,Ludhiana,Premium
+441,Darsh Deep,Male,Amritsar ,Regular
+442,Amara Talwar,Male,Ludhiana,Gold
+443,Harinakshi Borah,Male,Amritsar ,Gold
+444,Logan Sidhu,Female,Ludhiana,Gold
+445,George Wable,Female,Chandigarh,Silver
+446,Bachittar Ray,Female,Ludhiana,Regular
+447,Isaiah Rastogi,Female,Amritsar ,Silver
+448,Arunima Dass,Female,Mumbai,Silver
+449,Anya Varkey,Female,Mumbai,Gold
+450,Kiaan Kanda,Male,Banglore,Silver
+451,Ekapad Luthra,Male,Jaipur,Gold
+452,Dev Rajan,Male,Jaipur,Gold
+453,Praneel Ramakrishnan,Female,Amritsar ,Silver
+454,Yash Buch,Female,Ludhiana,Silver
+455,Harita Patel,Male,Chandigarh,Premium
+456,Naveen Ganguly,Male,Mumbai,Regular
+457,Bishakha Bose,Male,Mumbai,Regular
+458,Krish Borra,Male,Amritsar ,Gold
+459,Pratyush Barman,Male,Delhi,Premium
+460,Ayushman Varkey,Female,Ludhiana,Premium
+461,Vedhika Gala,Male,Ludhiana,Premium
+462,Kamala Tailor,Male,Banglore,Gold
+463,Januja Tiwari,Male,Banglore,Premium
+464,Sai Majumdar,Female,Jaipur,Gold
+465,Baljiwan Khanna,Male,Delhi,Silver
+466,Christopher Kuruvilla,Male,Mumbai,Gold
+467,Ekbal Kata,Female,Pune,Regular
+468,Idika Mannan,Female,Amritsar ,Premium
+469,Mohammed Jani,Male,Pune,Gold
+470,Xiti Minhas,Male,Pune,Gold
+471,Priya Balasubramanian,Female,Amritsar ,Regular
+472,Aadhya Batra,Male,Pune,Premium
+473,Daniel Oak,Female,Amritsar ,Silver
+474,Nisha Sama,Male,Pune,Silver
+475,Omaja Malhotra,Female,Amritsar ,Silver
+476,Wyatt Parikh,Male,Ludhiana,Gold
+477,Harish Sarkar,Female,Delhi,Premium
+478,Tanveer Nagar,Female,Delhi,Regular
+479,Jeremiah Aggarwal,Female,Ludhiana,Gold
+480,Alexander Sandhu,Female,Delhi,Regular
+481,Ekansh Kale,Female,Chandigarh,Gold
+482,Abha Barad,Male,Delhi,Regular
+483,Sachi Dutt,Male,Mumbai,Premium
+484,Parth Pandit,Female,Chandigarh,Premium
+485,Aahana Palla,Female,Banglore,Regular
+486,Ladli Kata,Female,Amritsar ,Premium
+487,Yagnesh Date,Female,Ludhiana,Premium
+488,Ekalinga Parmar,Male,Mumbai,Silver
+489,Diya Bose,Female,Banglore,Regular
+490,Janani Datta,Female,Ludhiana,Gold
+491,Meghana Sidhu,Female,Mumbai,Premium
+492,Sara Devan,Female,Ludhiana,Gold
+493,Xavier Radhakrishnan,Female,Ludhiana,Silver
+494,Aachal Dhillon,Female,Ludhiana,Silver
+495,Osha Morar,Male,Ludhiana,Premium
+496,Eshana Pillai,Male,Pune,Gold
+497,William Bava,Female,Banglore,Premium
+498,Anirudh Pall,Female,Amritsar ,Premium
+499,Saumya Boase,Male,Ludhiana,Gold
+500,Dakshesh Karnik,Female,Delhi,Premium

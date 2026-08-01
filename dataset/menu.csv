@@ -1,0 +1,34 @@
+dish_id,dish_name,category,price,cost
+101,Butter Chicken,Main Course,695,220
+102,Paneer Butter Masala,Main Course,380,180
+103,Dal Makhani,Main Course,320,140
+104,Shahi Paneer,Main Course,390,190
+105,Chicken Biryani,Main Course,420,210
+106,Veg Biryani,Main Course,300,140
+107,Karahi Chicken,Main Course,695,220
+108,Rara Chicken,Main Course,695,220
+109,Chilly Chicken,Main Course,650,200
+110,Paneer Tikka,Starter,280,120
+111,Chicken Tikka,Starter,320,160
+112,Hara Bhara Kabab,Starter,240,100
+113,Spring Rolls,Starter,220,90
+114,Masala Dosa,South Indian,180,70
+115,Plain Dosa,South Indian,150,60
+116,Idli Sambar,South Indian,120,50
+117,Vada Sambar,South Indian,130,55
+118,Veg Burger,Fast Food,150,60
+119,Chicken Burger,Fast Food,220,90
+120,French Fries,Fast Food,120,45
+121,Cheese Pizza,Fast Food,350,160
+122,Veg Pizza,Fast Food,320,150
+123,Chicken Pizza,Fast Food,420,200
+124,Cold Coffee,Beverage,180,60
+125,Hot Coffee,Beverage,120,40
+126,Tea,Beverage,60,20
+127,Fresh Lime Soda,Beverage,90,30
+128,Mango Shake,Beverage,150,60
+129,Chocolate Brownie,Dessert,180,70
+130,Ice Cream Sundae,Dessert,220,90
+131,Gulab Jamun,Dessert,120,40
+132,Rasmalai,Dessert,160,70
+133,Cheesecake,Dessert,250,110
