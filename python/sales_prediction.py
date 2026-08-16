@@ -1,4 +1,8 @@
+import os
+from dotenv import load_dotenv
 import mysql.connector
+load_dotenv()
+
 import pandas as pd
 import numpy as np
 
@@ -9,10 +13,10 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 
 connection = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="2210",
-    database="restaurant_db"
+    host=os.getenv("DB_HOST"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    database=os.getenv("DB_NAME")
 )
 
 query = """

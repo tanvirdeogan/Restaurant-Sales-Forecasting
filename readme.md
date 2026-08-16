@@ -2,97 +2,628 @@
 
 ## Project Overview
 
-The Restaurant Sales Forecasting and Recommendation System is a data science project developed to analyze restaurant sales data, identify important business trends, predict daily sales, and generate useful business recommendations.
+The Restaurant Sales Forecasting and Recommendation System is an end-to-end data science project developed to analyze restaurant sales data, identify important business trends, forecast daily sales, and generate data-driven business recommendations.
 
-The project stores customer, menu, and sales information in MySQL. Python is used for data loading, cleaning, analysis, visualization, machine learning, sales forecasting, and recommendation generation.
+The project uses MySQL for storing and managing restaurant data and Python for data processing, analysis, visualization, machine learning, and recommendation generation.
+
+The system works with customer, menu, and sales data to analyze restaurant performance, identify best-selling dishes, understand customer and sales trends, detect peak ordering hours, forecast daily sales, and generate recommendations for inventory and staffing decisions.
+
+---
 
 ## Objectives
 
-- Store restaurant data using a relational database.
-- Analyze sales and customer data.
+The main objectives of this project are:
+
+- Store customer, menu, and sales data in a MySQL database.
+- Retrieve and process data using Python.
+- Clean and prepare the data using Pandas and NumPy.
+- Perform Exploratory Data Analysis (EDA).
+- Analyze restaurant revenue and sales trends.
 - Identify best-selling and underperforming menu items.
-- Analyze revenue and customer trends.
+- Analyze revenue by dish and category.
 - Identify peak ordering hours and busy days.
-- Build a sales prediction model.
-- Forecast daily restaurant sales.
-- Generate recommendations for inventory and staffing.
+- Analyze customer membership and city-wise trends.
+- Build machine learning models for sales prediction.
+- Develop a daily sales forecasting model.
+- Generate recommendations for inventory planning.
+- Generate staffing recommendations based on order patterns.
+- Identify menu items that require performance review.
+
+---
 
 ## Technologies Used
 
+### Programming Language
+
 - Python
+
+### Database
+
 - MySQL
+- MySQL Workbench
+
+### Python Libraries
+
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
 - Scikit-learn
-- MySQL Connector
-- SQLAlchemy
+- mysql-connector-python
 - Joblib
-- Git and GitHub
+
+### Development Tools
+
 - Visual Studio Code
-- MySQL Workbench
+- Git
+- GitHub
+- GitHub Desktop
 
-## Database
+## Project Architecture
 
-The project uses three main tables:
-
-### Customers
-
-Stores customer information.
-
-Main fields:
-
-- customer_id
-- customer_name
-- gender
-- city
-- membership
-
-### Menu
-
-Stores restaurant menu information.
-
-Main fields:
-
-- dish_id
-- dish_name
-- category
-- price
-- cost
-
-### Sales
-
-Stores transaction information.
-
-Main fields:
-
-- order_id
-- customer_id
-- dish_id
-- quantity
-- unit_price
-- discount
-- payment_method
-- order_date
-- order_time
-- total_bill
-
-## Project Workflow
+The project follows an end-to-end data science workflow:
 
 ```text
 MySQL Database
-       ↓
-Data Loading
-       ↓
-Data Cleaning
-       ↓
+      |
+      v
+Data Extraction
+      |
+      v
+Data Cleaning and Preparation
+      |
+      v
 Exploratory Data Analysis
-       ↓
+      |
+      v
 Data Visualization
-       ↓
+      |
+      v
 Machine Learning
-       ↓
+      |
+      v
 Sales Forecasting
-       ↓
+      |
+      v
 Recommendation System
+      |
+      v
+Business Insights
+```
+
+---
+
+## Database Design
+
+The project uses three main tables:
+
+- `customers`
+- `menu`
+- `sales`
+
+These tables are stored in a MySQL database and are connected using primary and foreign keys.
+
+### Customers Table
+
+The `customers` table stores information about restaurant customers.
+
+| Column | Description |
+|---|---|
+| customer_id | Unique identifier for each customer |
+| customer_name | Name of the customer |
+| gender | Gender of the customer |
+| city | City of the customer |
+| membership | Membership type of the customer |
+
+### Menu Table
+
+The `menu` table stores information about the dishes available in the restaurant.
+
+| Column | Description |
+|---|---|
+| dish_id | Unique identifier for each dish |
+| dish_name | Name of the dish |
+| category | Category of the dish |
+| price | Selling price of the dish |
+| cost | Cost of preparing the dish |
+
+### Sales Table
+
+The `sales` table stores individual restaurant transactions.
+
+| Column | Description |
+|---|---|
+| order_id | Unique identifier for each order |
+| customer_id | Identifier of the customer who placed the order |
+| dish_id | Identifier of the ordered dish |
+| quantity | Quantity of the dish ordered |
+| unit_price | Price per unit |
+| discount | Discount applied to the order |
+| payment_method | Method used for payment |
+| order_date | Date on which the order was placed |
+| order_time | Time at which the order was placed |
+| total_bill | Total bill amount |
+
+---
+
+## Database Relationships
+
+The tables are related using the following keys:
+
+```text
+customers
+    |
+    | customer_id
+    v
+sales
+    |
+    | dish_id
+    v
+menu
+```
+
+- `customer_id` in the `sales` table references the `customers` table.
+- `dish_id` in the `sales` table references the `menu` table.
+
+This relational structure allows customer, menu, and transaction information to be combined for analysis.
+
+## SQL Analysis
+
+SQL was used to perform the initial analysis of the restaurant database.
+
+The SQL analysis includes:
+
+- Checking the total number of customers.
+- Checking the total number of menu items.
+- Calculating the total number of orders.
+- Calculating total restaurant revenue.
+- Calculating the average order value.
+- Finding the highest and lowest order values.
+- Calculating the total quantity of dishes sold.
+- Identifying the best-selling dishes.
+- Calculating revenue generated by individual dishes.
+- Analyzing revenue by menu category.
+- Identifying the highest-spending customers.
+- Analyzing revenue by customer city.
+- Comparing sales based on membership type.
+- Analyzing different payment methods.
+- Identifying peak ordering hours.
+
+SQL joins were used to combine information from the `customers`, `menu`, and `sales` tables.
+
+---
+
+## Data Cleaning and Preparation
+
+Python and Pandas were used to prepare the data for analysis and machine learning.
+
+The following data preparation steps were performed:
+
+- Loaded data from MySQL into Python.
+- Checked the shape and structure of the datasets.
+- Checked column data types.
+- Checked for missing values.
+- Checked for duplicate records.
+- Converted date and time columns into appropriate formats.
+- Created aggregated daily sales data.
+- Created additional features required for analysis and machine learning.
+- Prepared the data for visualization and model training.
+
+NumPy was used along with Pandas for numerical operations and data processing.
+
+---
+
+## Exploratory Data Analysis
+
+Exploratory Data Analysis was performed to understand restaurant sales patterns and customer behavior.
+
+The analysis focused on:
+
+- Overall sales performance.
+- Revenue trends.
+- Best-selling dishes.
+- Revenue by category.
+- Customer distribution.
+- Membership distribution.
+- City-wise sales.
+- Payment method usage.
+- Peak ordering hours.
+- Daily order trends.
+- High-performing and underperforming menu items.
+
+The results of the analysis were visualized using Matplotlib and Seaborn.
+
+## Data Visualization
+
+Matplotlib and Seaborn were used to create visualizations that make the results of the analysis easier to understand.
+
+The project includes visualizations for:
+
+- Top 10 best-selling dishes.
+- Revenue generated by menu category.
+- Revenue generated by customer city.
+- Payment method distribution.
+- Peak ordering hours.
+- Customer membership distribution.
+- Actual versus predicted daily sales.
+- Final sales forecasting results.
+
+The visualizations help identify important sales patterns and support the business recommendations generated by the system.
+
+---
+
+## Dashboard
+
+The project includes a collection of analysis charts that provide an overview of restaurant performance.
+
+The dashboard analysis focuses on:
+
+### Revenue Analysis
+
+Revenue is analyzed across different dishes, categories, and customer cities to identify the major sources of restaurant income.
+
+### Best-Selling Dishes
+
+The best-selling dishes are identified using the total quantity sold.
+
+### Peak Ordering Hours
+
+Order volume is analyzed by hour to identify periods of high customer demand.
+
+### Customer Trends
+
+Customer data is analyzed based on city and membership type to understand customer distribution.
+
+### Payment Analysis
+
+The distribution of different payment methods is analyzed to understand customer payment preferences.
+
+### Sales Prediction
+
+Actual sales are compared with predicted sales to evaluate the performance of the machine learning model.
+
+The generated charts are stored in the `images` directory.
+
+## Machine Learning
+
+Machine learning was used to predict restaurant daily sales based on available sales and operational features.
+
+The project initially evaluated different regression approaches to determine which model performed better on the available dataset.
+
+The target variable for the prediction task was:
+
+```text
+Total Daily Sales
+```
+
+The data was divided into training and testing sets. The training data was used to train the models, while the testing data was used to evaluate their performance on unseen data.
+
+---
+
+## Initial Model — Linear Regression
+
+Linear Regression was used as an initial baseline model.
+
+The model used features such as:
+
+- Total quantity sold
+- Total number of orders
+- Average discount
+- Day
+- Month
+- Day of week
+- Weekend indicator
+
+The Linear Regression model produced the following results:
+
+| Metric | Result |
+|---|---:|
+| MAE | 2134.69 |
+| RMSE | 2896.54 |
+| R² Score | 0.68 |
+
+---
+
+## Random Forest Regression
+
+Random Forest Regression was then used to develop a more advanced sales prediction model.
+
+The improved model included both operational and historical sales features, including:
+
+- Total quantity
+- Total number of orders
+- Average discount
+- Day
+- Month
+- Day of week
+- Weekend indicator
+- Previous day sales
+- Previous week sales
+- Rolling 7-day sales
+
+The improved Random Forest model produced the following results:
+
+| Metric | Result |
+|---|---:|
+| MAE | 2137.58 |
+| RMSE | 2650.35 |
+| R² Score | 0.79 |
+
+---
+
+## Model Comparison
+
+The model results can be compared as follows:
+
+| Model | MAE | RMSE | R² Score |
+|---|---:|---:|---:|
+| Linear Regression | 2134.69 | 2896.54 | 0.68 |
+| Improved Random Forest | 2137.58 | 2650.35 | 0.79 |
+
+The Improved Random Forest model achieved a higher R² score and a lower RMSE than the initial Linear Regression model.
+
+Therefore, the Improved Random Forest model was selected as the final forecasting model for this project.
+
+---
+
+## Model Evaluation Metrics
+
+### Mean Absolute Error (MAE)
+
+MAE measures the average absolute difference between the actual sales values and the predicted sales values.
+
+A lower MAE indicates smaller average prediction errors.
+
+### Root Mean Squared Error (RMSE)
+
+RMSE measures the prediction error while giving greater weight to larger errors.
+
+A lower RMSE indicates better model performance.
+
+### R² Score
+
+R² Score measures how well the model explains the variation in the target variable.
+
+The final forecasting model achieved an R² score of `0.79` on the evaluation data.
+
+## Sales Forecasting
+
+A dedicated forecasting model was developed to estimate daily restaurant sales using historical and operational sales information.
+
+The forecasting process uses features such as:
+
+- Total quantity sold
+- Total number of orders
+- Average discount
+- Day of the month
+- Month
+- Day of the week
+- Weekend indicator
+- Previous day sales
+- Previous week sales
+- Rolling 7-day sales
+
+The data was arranged chronologically before splitting it into training and testing datasets so that the model could be evaluated on later observations.
+
+The final forecasting model was implemented using Random Forest Regression.
+
+The trained model was saved using Joblib:
+
+```text
+sales_forecasting_model.pkl
+```
+
+A comparison between actual and predicted sales was also generated to evaluate the forecasting performance.
+
+The forecasting visualization is stored as:
+
+```text
+images/final_sales_forecast.png
+```
+
+---
+
+## Recommendation System
+
+The recommendation system uses the analyzed restaurant data to generate practical business recommendations.
+
+The system focuses on four major areas:
+
+### 1. Inventory Recommendations
+
+Menu items are ranked according to the quantity sold.
+
+The current high-demand dishes identified by the system are:
+
+1. Butter Chicken
+2. Chicken Biryani
+3. Paneer Butter Masala
+4. French Fries
+5. Dal Makhani
+
+These dishes can be given higher priority during inventory planning because they have higher demand in the available sales data.
+
+---
+
+### 2. Revenue Recommendations
+
+Menu items are also ranked according to the total revenue generated.
+
+The current top revenue-generating dishes are:
+
+1. Butter Chicken
+2. Chicken Biryani
+3. Rara Chicken
+4. Karahi Chicken
+5. Paneer Butter Masala
+
+This analysis shows that quantity sold and revenue should both be considered when evaluating menu performance.
+
+---
+
+### 3. Underperforming Menu Items
+
+The system identifies menu items with relatively low sales volume for further review.
+
+The current items identified are:
+
+- Hara Bhara Kabab
+- Ice Cream Sundae
+- Cold Coffee
+- Fresh Lime Soda
+- Masala Dosa
+
+These items are not automatically recommended for removal. Instead, they can be reviewed for pricing, promotion, menu placement, product quality, and customer preferences.
+
+---
+
+### 4. Staffing Recommendations
+
+Order volume is analyzed by day of the week to identify periods requiring greater staffing attention.
+
+The busiest days identified in the dataset are:
+
+1. Saturday
+2. Monday
+3. Sunday
+
+These days may require additional staff or better resource allocation.
+
+---
+
+### 5. Peak Hour Recommendations
+
+The system also analyzes order volume by hour.
+
+The highest-volume hours identified are:
+
+- 13:00
+- 19:00
+- 12:00
+
+These results indicate increased customer activity around the lunch and evening periods.
+
+Restaurant management can use this information to plan staff schedules and operational resources more effectively.
+
+---
+
+## Automated Recommendation Output
+
+The recommendation system generates its results directly from the restaurant sales data.
+
+The workflow is:
+
+```text
+Sales Data
+    |
+    v
+Sales Aggregation
+    |
+    v
+Dish Performance Analysis
+    |
+    +------> High-Demand Dishes
+    |
+    +------> Revenue-Generating Dishes
+    |
+    +------> Underperforming Items
+    |
+    +------> Busy Days
+    |
+    +------> Peak Hours
+    |
+    v
+Business Recommendations
+```
+
+## Key Business Insights
+
+The analysis of the restaurant data produced several useful business insights.
+
+### Best-Performing Dishes
+
+Butter Chicken is the strongest-performing dish in the dataset based on both quantity sold and revenue.
+
+Chicken Biryani and Paneer Butter Masala also show strong demand and revenue performance.
+
+Rara Chicken and Karahi Chicken generate high revenue despite having lower sales quantities than some of the other top-selling dishes.
+
+This demonstrates why both quantity sold and revenue are useful when evaluating menu performance.
+
+### Underperforming Menu Items
+
+Hara Bhara Kabab, Ice Cream Sundae, Cold Coffee, Fresh Lime Soda, and Masala Dosa have comparatively lower sales quantities.
+
+These items can be reviewed for possible improvements in pricing, promotions, menu placement, product quality, or customer preferences.
+
+### Staffing Insights
+
+Saturday, Monday, and Sunday have the highest overall order volumes in the available dataset.
+
+These days can be considered for increased staffing and resource allocation.
+
+### Peak Hours
+
+The highest order activity occurs around 13:00, 19:00, and 12:00.
+
+These periods indicate important lunch and evening demand peaks and can be used for staff scheduling and operational planning.
+
+### Sales Forecasting
+
+The final Random Forest forecasting model achieved an R² score of 0.79 on the evaluation data.
+
+The model can be used as a supporting analytical tool for understanding expected sales patterns.
+
+---
+
+## Limitations
+
+The project has several limitations:
+
+- The dataset is intended for educational and demonstration purposes.
+- The available historical data is limited compared with a real restaurant's long-term transaction history.
+- Real-world restaurant sales can be affected by factors such as weather, holidays, festivals, special events, promotions, and seasonal demand.
+- The forecasting model is dependent on the patterns present in the available dataset.
+- The recommendation system provides analytical suggestions and does not replace human business decisions.
+- Model performance may change when the system is applied to a larger and more complex real-world dataset.
+
+---
+
+## Future Improvements
+
+The project can be further improved by adding:
+
+- Larger real-world restaurant datasets.
+- Weather information.
+- Public holidays and festival information.
+- Seasonal trends.
+- Special events and promotional campaigns.
+- Customer segmentation.
+- Customer purchase frequency analysis.
+- More advanced machine learning models.
+- Hyperparameter tuning.
+- Interactive dashboards using Power BI or Streamlit.
+- Automated future-date forecasting.
+- Real-time sales data integration.
+- Automated inventory management.
+- More advanced dish recommendation techniques.
+- Deployment as a web-based application.
+
+---
+
+## Conclusion
+
+The Restaurant Sales Forecasting and Recommendation System demonstrates a complete data science workflow, starting with database management and ending with machine learning-based forecasting and business recommendations.
+
+The project combines MySQL, Python, Pandas, NumPy, data visualization, and Scikit-learn to analyze restaurant operations and identify meaningful patterns in sales and customer data.
+
+The system can identify high-performing dishes, analyze revenue, detect underperforming menu items, identify busy days and peak ordering hours, forecast daily sales, and generate recommendations for inventory and staffing decisions.
+
+The project demonstrates how data analysis and machine learning can be used to transform raw restaurant transaction data into useful business insights and support data-driven decision-making.
+
+---
+
+## Author
+
+**Tanvir Kaur Deogan**
+Bachelor of Computer Applications (BCA)
