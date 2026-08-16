@@ -18,6 +18,8 @@ connection = mysql.connector.connect(
 query = """
 SELECT
     order_date,
+    quantity,
+    discount,
     total_bill
 FROM sales
 """
@@ -29,8 +31,13 @@ connection.close()
 sales["order_date"] = pd.to_datetime(sales["order_date"])
 
 daily_sales = (
-    sales.groupby("order_date")["total_bill"]
-    .sum()
+    sales.groupby("order_date")
+    .agg(
+        total_sales=("total_bill", "sum"),
+        total_quantity=("quantity", "sum"),
+        total_orders=("total_bill", "count"),
+        average_discount=("discount", "mean")
+    )
     .reset_index()
 )
 
@@ -41,10 +48,11 @@ daily_sales["month"] = daily_sales["order_date"].dt.month
 daily_sales["day_of_week"] = daily_sales["order_date"].dt.dayofweek
 daily_sales["is_weekend"] = daily_sales["day_of_week"].isin([5, 6]).astype(int)
 
-daily_sales["previous_day_sales"] = daily_sales["total_bill"].shift(1)
-daily_sales["previous_week_sales"] = daily_sales["total_bill"].shift(7)
+daily_sales["previous_day_sales"] = daily_sales["total_sales"].shift(1)
+daily_sales["previous_week_sales"] = daily_sales["total_sales"].shift(7)
+
 daily_sales["rolling_7_day_sales"] = (
-    daily_sales["total_bill"]
+    daily_sales["total_sales"]
     .shift(1)
     .rolling(7)
     .mean()
@@ -53,6 +61,9 @@ daily_sales["rolling_7_day_sales"] = (
 daily_sales = daily_sales.dropna()
 
 features = [
+    "total_quantity",
+    "total_orders",
+    "average_discount",
     "day",
     "month",
     "day_of_week",
@@ -63,7 +74,7 @@ features = [
 ]
 
 X = daily_sales[features]
-y = daily_sales["total_bill"]
+y = daily_sales["total_sales"]
 
 split = int(len(daily_sales) * 0.8)
 
@@ -74,7 +85,7 @@ y_train = y.iloc[:split]
 y_test = y.iloc[split:]
 
 model = RandomForestRegressor(
-    n_estimators=100,
+    n_estimators=200,
     random_state=42
 )
 
@@ -86,7 +97,7 @@ mae = mean_absolute_error(y_test, predictions)
 rmse = np.sqrt(mean_squared_error(y_test, predictions))
 r2 = r2_score(y_test, predictions)
 
-print("\nFinal Forecasting Model")
+print("\nImproved Forecasting Model")
 print("MAE:", round(mae, 2))
 print("RMSE:", round(rmse, 2))
 print("R2 Score:", round(r2, 2))
@@ -118,5 +129,11 @@ plt.savefig("images/final_sales_forecast.png")
 plt.show()
 
 joblib.dump(model, "sales_forecasting_model.pkl")
+
+print("\nForecasting model saved successfully.")
+
+
+joblib.dump(model, "sales_forecasting_model.pkl")
+joblib.dump(features, "forecast_features.pkl")
 
 print("\nForecasting model saved successfully.")
