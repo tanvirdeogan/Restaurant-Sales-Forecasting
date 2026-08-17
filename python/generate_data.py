@@ -3,22 +3,16 @@ import random
 from faker import Faker
 from datetime import datetime, timedelta
 
-# -------------------------------
 # GENERATE CUSTOMERS DATASET
-# -------------------------------
 
-# create faker object for Indian names
 fake = Faker("en_IN")
 
-# cities
 cities = [ "Ludhiana", "Delhi", "Mumbai", "Chandigarh", "Jaipur", "Pune", "Banglore", "Amritsar "]
 
-# membership types
 memberships = [ "Regular", "Silver", "Gold", "Premium" ]
 
 customers = []
 
-# generate 500 customers
 for customer_id in range(1,501):
     customer = {
         "customer_id" : customer_id,
@@ -29,19 +23,15 @@ for customer_id in range(1,501):
     }
     customers.append(customer)
 
-# create dataframe
 customers_df = pd.DataFrame(customers)
 
-# save csv
 customers_df.to_csv("Dataset/customers.csv", index=False)
 
 print("Customers dataset created successfully!")
 print(customers_df.head())
 
 
-# -------------------------------
 # GENERATE MENU DATASET
-# -------------------------------
 
 menu_items = [
 
@@ -106,9 +96,7 @@ print("\nMenu Dataset Created Successfully!")
 print(menu_df.head())
 
 
-# -------------------------------
 # GENERATE SALES DATASET
-# -------------------------------
 
 sales = []
 payment_methods = ["Card", "Cash", "UPI"]
@@ -154,12 +142,9 @@ for order_id in range(1, 10001):
         weights=[60, 25, 15]
     )[0]
 
-    # Generate a random order date within 6 months
     random_days = random.randint(0, 180)
     order_date = start_date + timedelta(days=random_days)
 
-    # Generate realistic restaurant order hours
-    # Generate realistic restaurant order time
 
     order_hour = random.choices(
         [11, 12, 13, 14, 18, 19, 20, 21, 22],
@@ -174,11 +159,9 @@ for order_id in range(1, 10001):
 
     order_date = order_date.strftime("%Y-%m-%d")
 
-    # Calculate total bill
     subtotal = unit_price * quantity
     total_bill = subtotal - (subtotal * discount / 100)
 
-    # Save one sale
     sales.append({
         "order_id": order_id,
         "customer_id": customer_id,
